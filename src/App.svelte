@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-  <Header />
+  <Header name="Smile" />
   <List />
 </div>
 

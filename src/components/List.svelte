@@ -41,7 +41,6 @@
 
   onMount(async () => {
     $items = await TodoApi.getAll();
-    console.log($items);
   });
 </script>
 

@@ -1,12 +1,13 @@
 <script>
+  export let name;
   import { items } from "../stores";
 
   $: itemCount = $items.length;
-  $: completedItemCount = $items.filter(item => item.completed).length
+  $: completedItemCount = $items.filter((item) => item.completed).length;
 </script>
 
 <div class="header">
-  <span> Smile's To-Do List </span>
+  <span> {name}'s To-Do List </span>
   <span>{completedItemCount}/{itemCount}</span>
 </div>
 
